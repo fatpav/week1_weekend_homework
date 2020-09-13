@@ -21,4 +21,6 @@ def get_stock_count(pet_shop):
     return len(pet_shop["pets"])
 
 def get_pets_by_breed(pet_shop, breed_type):
-    
+    from collections import Counter
+    breed_number = Counter(pet_shop["pets"]["breed"] == breed_type)
+    return breed_number
