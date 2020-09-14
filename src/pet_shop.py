@@ -30,4 +30,16 @@ def get_pets_by_breed(pet_shop, breed_type):
     return found_pets
 # this is going to add the matching pet breeds to the new list
 
-def find_pet_by_name(pet_shop, pet_name)
+def find_pet_by_name(pet_shop, pet_name):
+    found_name = None
+    for pet_handle in pet_shop["pets"]:
+        if pet_handle["name"] == pet_name:
+            found_name = pet_handle
+    return found_name
+
+def remove_pet_by_name(pet_shop, pet_leaving):
+    found_pet = pet_shop["pets"]"name"]
+    if pet_leaving == pet_shop["pets"]["name"]:
+        pop
+# This little guy requires the function to loop through the dictionary until it finds a name then rmove the entry.
+
