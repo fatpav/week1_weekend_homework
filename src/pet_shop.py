@@ -37,10 +37,13 @@ def find_pet_by_name(pet_shop, pet_name):
             found_name = pet_handle
     return found_name
 
-def remove_pet_by_name(pet_shop, pet_leaving):
-    for pet_gone in pet_shop["pets"]:
-        if pet_shop["pets"]["name"] == pet_leaving:
-            pop(pet_gone["name"])
-    
-# This little guy requires the function to loop through the dictionary until it finds a name then rmove the entry.
+def remove_pet_by_name(pet_shop, pet_name):
+    removed_pet = find_pet_by_name(pet_shop, pet_name)
+    pet_shop["pets"].remove(removed_pet)
+
+def add_pet_to_stock(pet_shop, added_pet):
+    pet_shop["pets"].append(added_pet)
+
+def get_customer_cash(customer):
+    return customer["cash"]
 
