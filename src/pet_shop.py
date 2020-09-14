@@ -29,3 +29,5 @@ def get_pets_by_breed(pet_shop, breed_type):
             found_pets.append(pet)
     return found_pets
 # this is going to add the matching pet breeds to the new list
+
+def find_pet_by_name(pet_shop, pet_name)
