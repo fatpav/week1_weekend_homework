@@ -38,8 +38,9 @@ def find_pet_by_name(pet_shop, pet_name):
     return found_name
 
 def remove_pet_by_name(pet_shop, pet_leaving):
-    found_pet = pet_shop["pets"]"name"]
-    if pet_leaving == pet_shop["pets"]["name"]:
-        pop
+    for pet_gone in pet_shop["pets"]:
+        if pet_shop["pets"]["name"] == pet_leaving:
+            pop(pet_gone["name"])
+    
 # This little guy requires the function to loop through the dictionary until it finds a name then rmove the entry.
 
